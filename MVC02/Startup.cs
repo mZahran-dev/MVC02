@@ -45,9 +45,9 @@ namespace MVC02
 
                 endpoints.MapControllerRoute(
                 name: "Default",
-                pattern : "{Controller}/{action}/{id:int?}",
+                pattern : "{Controller}/{action}/{id:int?}"
                 //defaults : new { id = new IntRouteConstraint() }
-                constraints: new {id= new IntRouteConstraint()}
+                //constraints: new {id= new IntRouteConstraint()}
                 );
             });
         }
